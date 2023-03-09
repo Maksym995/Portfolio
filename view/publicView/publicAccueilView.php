@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Maksym</title>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        
-    </nav>
+
+<?php 
+    include_once "inc/menuView.php" 
+?>
 
 <div class="">
-
+    <p>accueil</p>
 </div>
 
-
-<footer class="">
-    <div class=""><p class="">Copyright &copy; Your Website 2022</p></div>
-</footer>
+<?php 
+    include_once "inc/footerView.php" 
+?>
 
 </body>
 </html>

@@ -8,16 +8,17 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
-<nav class="">
-
-</nav>
+<?php 
+    include_once "inc/menuView.php" 
+?>
 
 <div class="">
 
 </div>
 
-<footer class="">
-    <div class=""><p class="">Copyright &copy; Your Website 2022</p></div>
-</footer>
+<?php 
+    include_once "inc/footerView.php" 
+?>
+
 </body>
 </html>

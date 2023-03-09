@@ -8,6 +8,7 @@ require_once "../model/LiensModel.php";
 require_once "../model/TravauxModel.php";
 //require_once "../model/UtilisateursModel.php";
 
+
 # Connexion
 try{
     $db = mysqli_connect(DB_HOST,DB_LOGIN,DB_PWD,DB_NAME,DB_PORT);
@@ -17,7 +18,7 @@ try{
 }
 
 # Router
-if(false){
+if(isset($_SESSION['myID'])&&$_SESSION['myID']==session_id()){
     require_once "../controller/privateController.php";
   
 }else{

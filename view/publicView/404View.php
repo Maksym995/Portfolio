@@ -9,24 +9,17 @@
 </head>
 <body>
 
-<nav class="">
-
-</nav>
+<?php 
+    include_once "inc/menuView.php" 
+?>
 
 <div class="">
-    <div class="">
-        <div class="">
-                <header class="">
-                    <h1 class=""><?=$error?></h1>
-                    <h3>Erreur 404 : <?=$error?> <a href="./">Revenir à l'accueil</a></h3>
-                </header>
-                
-
+            <h3>Erreur 404 : <a href="?p=publicAccueilView">Revisiter</a> le site web</h3>
 </div>
 
-<footer class="">
-    <div class=""><p class="">Copyright &copy; Your Website 2022</p></div>
-</footer>
+<?php 
+    include_once "inc/footerView.php" 
+?>
 
 </body>
 </html>
