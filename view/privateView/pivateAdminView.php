@@ -9,13 +9,21 @@
     <link href="public/css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <nav>
-        
-    </nav>
+<?php
+//fonction pour include -> nav privateview
+include_once "inc/menuPrivateView.php"
+
+?>
 
 <div class="">
-
+    <h1>Accueil de l'administration</h1>
 </div>
 
+
+<?php
+//fonction pour include -> nav privateview
+include_once "../publicView/inc/footerView.php"
+
+?>
 </body>
 </html>

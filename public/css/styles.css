@@ -1,13 +1,19 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
 ul{
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: var(--mise-en-page-bg);
 }
 a{
     text-decoration: none;
-    color: black;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
+    color: var(--color);
+    margin: 20px;
 }
 
 form{padding:5px;
@@ -19,14 +25,14 @@ form{padding:5px;
   /*DARK MODE*/
   :root {
     --color: dark;
-    --body-color: white;
+    --body-color: linear-gradient(90deg, rgba(6,0,98,1) 0%, rgba(9,121,82,1) 50%, rgba(0,212,255,1) 100%);
     --mise-en-page-bg: white; 
     --form-bg: white;
     --form-border-color: #313131;
   }
   .mode-dark {
     --color: white;
-    --body-color: black; 
+    --body-color:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     --mise-en-page-bg: #232323; 
     --form-bg: #232323;
     --form-border-color: #ccc;
@@ -34,7 +40,7 @@ form{padding:5px;
   
   body{
     color: var(--color);
-    background-color: var(--body-color);  
+    background: var(--body-color);  
   }
   form{padding:5px;
     border-color: var(--form-border-color);
@@ -72,7 +78,7 @@ form{padding:5px;
     white-space : nowrap;
   }
   
-  .btToggle .slider:before {
+  .btToggle .slider::before {
     position: absolute;
     content: "";
     height: 26px;
@@ -94,7 +100,7 @@ form{padding:5px;
     color:#000;
   }
   
-  .btToggle input:checked + .slider:before {
+  .btToggle input:checked + .slider::before {
     right:4px;
     left:auto;
     background-color: #000;

@@ -21,6 +21,9 @@ if(isset($_GET['p'])){
         case 'tutoriels':
             include '../view/publicView/publicTutorielsView.php';
             break;
+            case 'admin':
+                include '../view/publicView/publicAdminView.php';
+                break;
         default:
             include_once "../view/publicView/publicAccueilView.php";
     }
@@ -30,3 +33,5 @@ if(isset($_GET['p'])){
     // inclusion d'homepage une seule X
     include_once "../view/publicView/publicAccueilView.php";
 }
+
+// si on veut se connecter 

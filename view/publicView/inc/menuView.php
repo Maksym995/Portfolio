@@ -1,13 +1,13 @@
 <nav>
 <script type="text/javascript" src="js/scripts.js"></script>
-    <h1>Maksym Sokol</h1>
-    <ul>
-        <li class="menu"><a class="nav-link" href="./">Accueil</a></li>
-        <li class="menu"><a class="nav-link" href="?p=contact">Contact</a></li>
-        <li class="menu"><a class="nav-link" href="?p=curriculum">Curriculum</a></li>
-        <li class="menu"><a class="nav-link" href="?p=liens">Liens</a></li>
-        <li class="menu"><a class="nav-link" href="?p=travaux">Travaux</a></li>
-        <li class="menu"><a class="nav-link" href="?p=tutoriels">Tutoriels</a></li>
+    <ul class="nav">
+        <li><a href="./">Accueil</a></li>
+        <li><a href="?p=contact">Contact</a></li>
+        <li><a href="?p=curriculum">Curriculum</a></li>
+        <li><a href="?p=liens">Liens</a></li>
+        <li><a href="?p=travaux">Travaux</a></li>
+        <li><a href="?p=tutoriels">Tutoriels</a></li>
+        <li><a href="?p=admin">Admin</a></li>
 
         <li class="menu"><a class="nav-link" href="#"></a></li>
     </ul>
