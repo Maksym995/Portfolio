@@ -1,115 +1,96 @@
 *, ::before, ::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    background: var(--mise-en-page-bg);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
 }
+
 a{
-    text-decoration: none;
-    color: var(--color);
-    margin: 20px;
+  text-decoration: none;
+  margin: 20px;
+}
+
+h1 a {
+  color: black;
+}
+
+ul li a {
+  color: black;
 }
 
 form{padding:5px;
-    border-color: #313131;
+    border-color: none;
     border-style:solid;
     border-width: 1px 0;
   }
 
-  /*DARK MODE*/
-  :root {
-    --color: dark;
-    --body-color: linear-gradient(90deg, rgba(6,0,98,1) 0%, rgba(9,121,82,1) 50%, rgba(0,212,255,1) 100%);
-    --mise-en-page-bg: white; 
-    --form-bg: white;
-    --form-border-color: #313131;
-  }
-  .mode-dark {
-    --color: white;
-    --body-color:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    --mise-en-page-bg: #232323; 
-    --form-bg: #232323;
-    --form-border-color: #ccc;
-  }
+.formulaire {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   
-  body{
-    color: var(--color);
-    background: var(--body-color);  
-  }
-  form{padding:5px;
-    border-color: var(--form-border-color);
-    border-style:solid;
-    border-width: 1px 0;
-    background-color: var(--form-bg);  
-  }
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
   
-  .btToggle .btn {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    line-height : 34px;
-    color:#fff;
-  }
-  
-  /* Hide default HTML checkbox */
-  .btToggle input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .btToggle .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0; 
-    bottom: 0;
-    right:0;
-    background-color: #000;  
-    border-radius: 34px; 
-    white-space : nowrap;
-  }
-  
-  .btToggle .slider::before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white; 
-    border-radius: 50%;
-  }
-  
-  .btToggle input:checked + .slider {
-    background-color: #fff;
-    padding-left: 18px;
-    padding-right: 36px;
-  }
-  
-  .btToggle input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-    color:#000;
-  }
-  
-  .btToggle input:checked + .slider::before {
-    right:4px;
-    left:auto;
-    background-color: #000;
-  }
-  
-  .mise-en-page-lien .bloc-mise-en-page{
-    background-color: var(--mise-en-page-bg);
-  }
-  
-  .bloc-lien a:link, .bloc-lien a:visited, .bloc-lien a{
-    color: var(--color);
-  }
+}
+
+nav{
+  display: grid;
+  grid-template-columns: auto 5%;
+  grid-template-rows: 10vh;
+  grid-template-areas: "menu divdm";
+  /* Dans Grid tous les items sont centrés verticalement */
+  /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
+  align-items: center;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  bottom:0;  /* on le colle en bas */
+  width:100%;
+  height:100px;   /* Hauteur du pied de page */
+
+}
+
+.h6 {
+  margin: 1vh;
+}
+
+.sociaux a img {
+  margin: 1em;
+  width: 2em;
+}
+
+/*Dark Mode*/
+.dark-mode { 
+  background-color: black;  color: white; 
+} 
+.light-mode {  
+  background-color: white;  color: black; 
+}
+
+.dark-mode a {
+  color: white;
+}

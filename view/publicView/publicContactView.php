@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Maksym</title>
+    <title>Portfolio - Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-
+<body class="">
 <?php 
     include_once "inc/menuView.php" 
 ?>
 
-    <div class="">
-    <h1>Mon formulaire de contact</h1>
-    <p>Merci de me laisser un message</p>
-    <?php
-    if(isset($erreur))
-    echo $erreur;
-    else{
-    ?>
-    <form action="" method="post" name="contact">
-        <input name="lenom" placeholder="Votre nom" required><br>
-        <input name="lemail" placeholder="Votre mail" required><br>
-        <input name="lesujet" placeholder="Sujet" required><br>
-        <textarea name="lemessage" placeholder="Votre message" required></textarea><br>
-        <input type="submit" value="Envoi du mail">
-    <?php
-    }
-    ?>
-    </form>
+<div class="formulaire">
+    <h1 class="">Le formulaire de contact</h1>
+    <p class="">Merci de me laisser un message</p>
+        <?php
+        if(isset($erreur))
+        echo $erreur;
+        else{
+        ?>
+            <form action="" method="post" name="contact">
+                <input name="lenom" placeholder="Votre nom" required><br>
+                <input name="lemail" placeholder="Votre mail" required><br>
+                <input name="lesujet" placeholder="Sujet" required><br>
+                <textarea name="lemessage" placeholder="Votre message" required></textarea><br>
+                <input type="submit" value="Envoi du mail">
+        <?php
+        }
+        ?>
+            </form>
 </div>
 
 <?php 
