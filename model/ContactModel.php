@@ -1,63 +1,52 @@
 <?php
-// vérification de l'envoi du formulaire avec tous les champs nécessaires dans un seul isset
-// équivalennt dez multiples isset()&&isset()&&....
-if(isset($_POST['nom'],$_POST['mail'],$_POST['lesujet'],$_POST['message'])) {
-    /*
-     * Création de variables locales
-     */
-    $lenom = strip_tags(trim($_POST['nom']));
-    // filter_var avec FILTER_VALIDATE_EMAIL comme attribut va vérifier
-    // si le mail est formaté correctement (pas de vérification de l'existence du mail)
-    // on récupère le mail, sinon $lemail vaut false
-    $lemail = filter_var(trim($_POST['mail']), FILTER_VALIDATE_EMAIL);
-    $lesujet = strip_tags(trim($_POST['lesujet']));
-    $lemessage = strip_tags(trim($_POST['message']));
 
-    // si les valeurs sont acceptées (autre que vide, false etc...)
-    if (!empty($lenom) && !empty($lemail) && !empty($lesujet) && !empty($lemessage)) {
-        /*
-         *  Préparation pour l'envoi
-         */
-        // votre mail de réception
-        $monmail = "no-replay@webdev-cf2m.be";
-        // mail qui appartient à votre site (plus sécurisé que immédiatement le mail de
-        // l'utilisateur) - Pratique en cas d'entrée dans les spam, rajoutez ce mail dans vos
-        // contact et tous les mails venant de votre formulaire n'irons jamais dans les spam
-        $mailserveur = "robot@monsite.be";
-        // titre du mail
-        $titre = "Message venant de votre site";
-        // message final
-        $messageFinal = "Message envoyé par : \r\n\r\n";
-        $messageFinal .= $lemail . "\r\n\r\n";
-        $messageFinal .= "Titre: \r\n\r\n";
-        $messageFinal .= $lesujet . "\r\n\r\n";
-        $messageFinal .= $lemessage;
 
-        /*
-         * Envoi du mail
-         */
-        // création des entêtes
-        $entetes = 'From: ' . $mailserveur . "\r\n" .
-            'Reply-To: ' . $lemail . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
-
-        // envoi réel du mail
-        $envoi = @mail($monmail, $titre, $messageFinal, $entetes);
-        // mail envoyé
-        if($envoi){
-            // message de réussite de l'envoi
-            $erreur = "<h2>Message bien envoyé</h2>";
-            $erreur .= "<h3>Vous recevrez une réponse prochainement</h3>";
+/**
+ * fonction qui récupère les messages pour l'administrateur
+ * @param mysqli $c
+ * @return array|string
+ */
+function getAllMessages(mysqli $c): array|string
+{
+    $sql = "SELECT * FROM messages ORDER BY dates DESC";
+    try {
+        $query = mysqli_query($c,$sql);
+        #$query = $c->query($sql);
+        #if($query->rowCount()==0){
+        if(mysqli_num_rows($query)===0){
+            return "Pas encore de messages";
         }else{
-            // problème de la fonction mail, erreur personnalisée
-            $erreur = "Problème du serveur, veuillez recommencer plus tard";
+            #return $query->fetchAll(PDO::FETCH_ASSOC);
+            return mysqli_fetch_all($query,MYSQLI_ASSOC);
         }
 
-    // un champs est vide
-    } else {
-        // création d'une variable d'erreur en cas de champs non valides
-        $erreur = "<h3>Veuillez remplir correctement les champs</h3>";
-        $erreur .= "<h4>Retour au formulaire <a href='#' onclick='history.go(-1);'>ici</a></h4>";
+    } catch (Exception $e) {
+        return $e->getMessage();
     }
 }
-?>
+
+/**
+ * Insertion d'un message dans la DB
+ * @param mysqli $c
+ * @param string $lemail
+ * @param string $lemessage
+ * @param string $lenom
+ * @param string $lesujet
+ * @return bool|string
+ */
+function insertMessages(mysqli $c, string $lemail, string $lemessage, string $lenom, string $lesujet): bool|string{
+    $lemail = mysqli_real_escape_string($c,$lemail);
+    $lemessage = mysqli_real_escape_string($c,$lemessage);
+    $lenom = mysqli_real_escape_string($c,$lenom);
+    $lesujet = mysqli_real_escape_string($c,$lesujet);
+    $sql = "INSERT INTO `contacts` (`mail`, `messages`, `nom`, `sujet`) VALUES ('$lemail', '$lemessage', '$lenom', '$lesujet');";
+    #$sql = "INSERT INTO `messages` (`messagesmail`, `messagestext`) VALUES (?, ?);";
+    #$query = $c->prepare($sql);
+    try {
+        mysqli_query($c,$sql);
+        #$query->execute([$mail,$message]);
+        return true;
+    } catch (Exception $e) {
+        return $e->getMessage();
+    }
+}

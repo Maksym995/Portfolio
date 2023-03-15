@@ -12,8 +12,8 @@
     include_once "inc/menuView.php" 
 ?>
 
-<div class="">
-
+<div class="curriculum">
+    <img width="36%" src="assets/curriculum.png" alt="">
 </div>
 
 <?php 

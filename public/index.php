@@ -6,9 +6,13 @@ require_once "../config.php";
 require_once "../model/ContactModel.php";
 require_once "../model/LiensModel.php";
 require_once "../model/TravauxModel.php";
+require_once "../model/MailModel.php";
 //require_once "../model/UtilisateursModel.php";
 
-
+# PHP ini_set mail
+ini_set('SMTP', MAIL_SERVER);
+ini_set('smtp_port', MAIL_PORT);
+ini_set('sendmail_from', MAIL_FROM);
 
 # Connexion
 try{

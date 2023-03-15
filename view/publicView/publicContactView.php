@@ -11,30 +11,34 @@
 <?php 
     include_once "inc/menuView.php" 
 ?>
-<div class="formulaire">
-    <h1>Le formulaire de contact</h1>
-    <h3>Merci de me laisser un message</h3>
-
-            <?php
-            if(isset($erreur))
-            echo $erreur;
-            else{
+<div class="centerbody">
+    <div class="formulaire">
+        <h1>Le formulaire de contact</h1>
+        <h3>Merci de me laisser un message</h3>
+        <p class="alert">
+        <?php
+        if (isset($message)):
             ?>
-                <form class="form" action="" method="post" name="contact">
-                    <label class="label">Votre nom</label>
-                    <input class="input" type="text" name="lenom" required>
-                    <label class="label">Votre mail</label>
-                    <input class="input" type="text" name="lemail" required>
-                    <label class="label">Sujet</label>
-                    <input class="input" type="text" name="lesujet" required>
-                    <label class="label">Votre message</label>
-                    <textarea class= "msg" name="lemessage" maxlength="600" required></textarea>
-                    <input class="submit" type="submit" value="Envoi du mail">
-            <?php
-            }
-            ?>
-                </form>
+            <?= $message ?>
+        <?php 
+        endif;
+        ?> 
+        </p>
+            <form class="form" action="" method="POST" name="contacts">
+                <label class="label">Votre nom</label>
+                <input class="input" type="text" name="nom">
+                <label class="label">Votre mail</label>
+                <input class="input" type="text" name="mail">
+                <label class="label">Sujet</label>
+                <input class="input" type="text" name="sujet">
+                <label class="label">Votre message</label>
+                <textarea class= "msg" name="messages" maxlength="600"></textarea>
+                <input class="submit" type="submit" value="Envoi du mail">
+                <?php
+                ?>
+            </form>
 
+    </div>
 </div>
 <?php 
     include_once "inc/footerView.php" 
