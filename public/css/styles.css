@@ -138,3 +138,28 @@ footer{
   align-items: center;
   flex-direction: column;
 }
+
+/*Accueil*/
+.maphoto { 
+  width: 220px;
+  height: 220px;
+  position: relative;
+  left: 23vw;
+  top: 12vh;
+}
+
+.presentation {
+  width: 23em;
+  position:relative;
+  left: 43vw;
+  top:-7vh;
+}
+.accueildiv{
+  display: grid;
+  grid-template-columns: 230px 24em;
+  grid-template-rows: 20vh;
+  grid-template-areas: "maphoto presentation";
+  /* Dans Grid tous les items sont centrés verticalement */
+  /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
+  align-items: center;
+}

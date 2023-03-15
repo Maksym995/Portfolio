@@ -12,8 +12,17 @@
     include_once "inc/menuView.php" 
 ?>
 
-<div class="">
-    <p>accueil</p>
+<div class="accueildiv">
+    <img class="maphoto" src="assets/portfolio_moi.png" alt="">
+    <h2></h2>
+    <p class="presentation">Bonjour et bienvenu, vous voici sur mon premier jet de mon portfolio.
+        J'espère que vous passerez une agéable visite, peut-être même divertissante.
+        En tout cas, c'est l'effet rechercher.
+        Si l'envie de travailler avec moi vous vient, n'hésitez pas à me contacter !! 
+        <br><br>
+        À très bientot.
+        
+    </p>
 </div>
 
 <?php 
