@@ -1,7 +1,7 @@
 <nav class="">
 <script type="text/javascript" src="js/scripts.js"></script>
     <ul class="menu">
-        <h1 class=""><a href="./"><em>Maksym Sokol Portfolio</em></a></h1>
+        <h1 class=""><a href="./"><mark><em>Maksym Sokol Portfolio</em></mark</a></h1>
         <li><a href="?p=contact">Contact</a></li>
         <li><a href="?p=curriculum">Curriculum</a></li>
         <li><a href="?p=liens">Liens</a></li>
