@@ -13,13 +13,25 @@
     include_once "inc/menuView.php" 
 ?>
 
-<div class="">
-
+<div class="travaux">
+<?php
+        # tant qu'on a des liens
+        foreach($travaux as $item):
+        ?>
+            <div>
+               <a href="<?=$item['url']?>"><img src="<?=$item['img']?>"alt=""></a>
+                <h1><?=$item['titre']?></h1>
+                <p><?=nl2br($item['description'])?></p>
+            </div>
+        <?php
+        endforeach;
+    ?>
 </div>
 
+<div class="travauxfooter">
 <?php 
     include_once "inc/footerView.php" 
 ?>
-
+</div>
 </body>
 </html>

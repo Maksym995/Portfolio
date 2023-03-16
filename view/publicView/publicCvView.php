@@ -13,7 +13,7 @@
 ?>
 
 <div class="curriculum">
-    <img width="36%" src="assets/curriculum.png" alt="">
+    <img src="assets/curriculum.png" alt="">
 </div>
 
 <?php 

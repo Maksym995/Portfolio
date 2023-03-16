@@ -18,19 +18,19 @@
         foreach($liens as $item):
         ?>
             <div>
-               <a href="<?=$item['url']?>"><img src="<?=$item['img']?>" alt=""></a>
+               <a href="<?=$item['url']?>"><img src="<?=$item['img']?>"  alt=""></a>
                 <h1><?=$item['titre']?></h1>
-                <p><?=nl2br($item['message'])?></p>
+                <p><?=nl2br($item['description'])?></p>
             </div>
         <?php
         endforeach;
     ?>
 </div>
     
-
-<?php 
-    include_once "inc/footerView.php" 
-?>
-
+<div class="liensfooter">
+    <?php 
+        include_once "inc/footerView.php" 
+    ?>
+</div>
 </body>
 </html>

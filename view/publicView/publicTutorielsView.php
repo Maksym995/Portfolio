@@ -13,6 +13,18 @@
     include_once "inc/menuView.php" 
 ?>
 
+<div class="graphikart">
+    <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EvHAiskwHvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+        <div class="graphikarttext">
+            <h2>Apprendre le JavaScript : Les fonctions <br>
+            Par Graphikart.fr
+            </h2>
+            <p>J'apprécie tout particulièrement les tutos de Graphikart, ils sont toujours clairs et assez concis que pour ne pas devenir lourd sur la longueur. Les explications sur la synthaxe, la portée des fonctions, le this et les fonctions flechées tout ces sujets vulgarisés. bien-sûr il est possible de pousser plus loin leur compréhension mais l'essentiel pour débuter y est.</p>
+        </div>
+</div>
+
 <div class="tutodiv">
     <h2>JavaScript : les variables, les types, les opérateurs</h2>
     <div>
@@ -89,17 +101,7 @@
     </div>
 </div>
 
-<div class="graphikart">
-    <div class="youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EvHAiskwHvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-        <div class="graphikarttext">
-            <h2>Apprendre le JavaScript : Les fonctions <br>
-            Par Graphikart.fr
-            </h2>
-            <p>J'apprécie tout particulièrement les tutos de Graphikart, ils sont toujours clairs et assez concis que pour ne pas devenir lourd sur la longueur. Les explications sur la synthaxe, la portée des fonctions, le this et les fonctions flechées tout ces sujets vulgarisés. bien-sûr il est possible de pousser plus loin leur compréhension mais l'essentiel pour débuter y est.</p>
-        </div>
-</div>
+
 
 <div class="tutofooter">
 <?php 

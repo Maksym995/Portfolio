@@ -95,10 +95,20 @@ footer{
   align-items: center;
   position:absolute;
   bottom:0px;  /* on le colle en bas */
-  margin-top: 5vh;
+  margin-top: 4vh;
   margin-bottom: 2vh;
   width:100%;   /* Hauteur du pied de page */
+}
 
+.liensfooter, .travauxfooter,.tutofooter{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  bottom:-13vh;  /* on le colle en bas */
+  margin-top: 9vh;
+  width:100%; 
 }
 
 .h6 {
@@ -186,17 +196,7 @@ footer{
 .tutodiv p {
   margin: 1vh 0 1vh 0;
 }
-.tutofooter{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position:relative;
-  bottom:-13vh;  /* on le colle en bas */
-  margin-top: 9vh;
-  width:100%;   /* Hauteur du pied de page */
 
-}
 .graphikart {
   display: grid;
   grid-template-columns: 600px 400px;
@@ -205,6 +205,6 @@ footer{
   /* Dans Grid tous les items sont centrés verticalement */
   /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
 
 }
