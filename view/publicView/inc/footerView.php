@@ -1,6 +1,4 @@
 <footer class="">
-
-
     <div class="sociaux">
         <a href=""><img src="assets/fb_icone.png" alt=""></a>
         <a href=""><img src="assets/ig_icone.png" alt=""></a>

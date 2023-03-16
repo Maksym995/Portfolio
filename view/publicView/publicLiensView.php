@@ -12,8 +12,19 @@
     include_once "inc/menuView.php" 
 ?>
     
-<div class="">
-    
+<div class="liens">
+<?php
+        # tant qu'on a des liens
+        foreach($liens as $item):
+        ?>
+            <div>
+               <a href="<?=$item['url']?>"><img src="<?=$item['img']?>" alt=""></a>
+                <h1><?=$item['titre']?></h1>
+                <p><?=nl2br($item['message'])?></p>
+            </div>
+        <?php
+        endforeach;
+    ?>
 </div>
     
 

@@ -73,8 +73,8 @@ body {
  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
+  overflow-y: scroll;
   
 }
 
@@ -94,9 +94,10 @@ footer{
   justify-content: center;
   align-items: center;
   position:absolute;
-  bottom:1vh;  /* on le colle en bas */
-  width:100%;
-  height:100px;   /* Hauteur du pied de page */
+  bottom:0px;  /* on le colle en bas */
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  width:100%;   /* Hauteur du pied de page */
 
 }
 
@@ -162,4 +163,48 @@ footer{
   /* Dans Grid tous les items sont centrés verticalement */
   /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
   align-items: center;
+}
+
+/*Tutoreils*/
+.tutodiv{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tutodiv div li {
+  list-style: none;
+}
+.tutodiv h2 {
+  margin: 5vh 0 3vh 0;
+}
+
+.tutodiv h4{
+  margin: 1vh 0 1vh 0;
+}
+
+.tutodiv p {
+  margin: 1vh 0 1vh 0;
+}
+.tutofooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  bottom:-13vh;  /* on le colle en bas */
+  margin-top: 9vh;
+  width:100%;   /* Hauteur du pied de page */
+
+}
+.graphikart {
+  display: grid;
+  grid-template-columns: 600px 400px;
+  grid-template-rows: auto;
+  grid-template-areas: "youtube graphikarttext";
+  /* Dans Grid tous les items sont centrés verticalement */
+  /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
+  justify-content: center;
+  margin-top: 10vh;
+
 }

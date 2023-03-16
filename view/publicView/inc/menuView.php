@@ -14,3 +14,4 @@
         <p class="light" onclick="lightMode()"><b>Sun</b></p>
     </div>
 </nav>
+<hr>
