@@ -18,10 +18,15 @@
         # tant qu'on a des liens
         foreach($travaux as $item):
         ?>
-            <div>
-               <a href="<?=$item['url']?>"><img src="<?=$item['img']?>"alt=""></a>
-                <h1><?=$item['titre']?></h1>
-                <p><?=nl2br($item['description'])?></p>
+            <div class="gridsite">
+                <div class="imgsite">
+                    <a href="<?=$item['url']?>"><img class="imgsize" src="<?=$item['img']?>"alt=""></a>
+               </div>
+               <div class="textsite">
+                    <h1><?=$item['titre']?></h1>
+                    <br>
+                    <p><?=nl2br($item['description'])?></p>
+                </div>
             </div>
         <?php
         endforeach;

@@ -19,9 +19,9 @@
     </div>
         <div class="graphikarttext">
             <h2>Apprendre le JavaScript : Les fonctions <br>
-            Par Graphikart.fr
-            </h2>
-            <p>J'apprécie tout particulièrement les tutos de Graphikart, ils sont toujours clairs et assez concis que pour ne pas devenir lourd sur la longueur. Les explications sur la synthaxe, la portée des fonctions, le this et les fonctions flechées tout ces sujets vulgarisés. bien-sûr il est possible de pousser plus loin leur compréhension mais l'essentiel pour débuter y est.</p>
+            Par Graphikart.fr</h2>
+            <p>J'apprécie tout particulièrement les tutos de Graphikart, ils sont toujours clairs et assez concis que pour ne pas devenir lourd sur la longueur. <br><br>
+             Les explications sur la synthaxe, la portée des fonctions, le this et les fonctions flechées tout ces sujets vulgarisés. bien-sûr il est possible de pousser plus loin leur compréhension mais l'essentiel pour débuter y est.</p>
         </div>
 </div>
 

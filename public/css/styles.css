@@ -83,8 +83,6 @@ nav{
   grid-template-columns: auto 5%;
   grid-template-rows: 10vh;
   grid-template-areas: "menu divdm";
-  /* Dans Grid tous les items sont centrés verticalement */
-  /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
   align-items: center;
 }
 
@@ -100,13 +98,13 @@ footer{
   width:100%;   /* Hauteur du pied de page */
 }
 
-.liensfooter, .travauxfooter,.tutofooter{  
+.liensfooter,.tutofooter{  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position:relative;
-  bottom:-13vh;  /* on le colle en bas */
+  bottom:-10vh;  /* on le colle en bas */
   margin-top: 9vh;
   width:100%; 
 }
@@ -161,6 +159,7 @@ footer{
 
 .presentation {
   width: 23em;
+  font-size: 1.2em;
   position:relative;
   left: 43vw;
   top:-7vh;
@@ -170,9 +169,8 @@ footer{
   grid-template-columns: 230px 24em;
   grid-template-rows: 20vh;
   grid-template-areas: "maphoto presentation";
-  /* Dans Grid tous les items sont centrés verticalement */
-  /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
   align-items: center;
+  margin-top: 7vh;
 }
 
 /*Tutoreils*/
@@ -202,9 +200,58 @@ footer{
   grid-template-columns: 600px 400px;
   grid-template-rows: auto;
   grid-template-areas: "youtube graphikarttext";
-  /* Dans Grid tous les items sont centrés verticalement */
-  /* Comme justifi content n'est pas defini, il prend la valeur par défaut = strech */
   justify-content: center;
   margin-top: 5vh;
 
+}
+
+/*Travaux */
+
+.travaux{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column
+}
+.imgsize{
+  width: 600px;
+}
+.gridsite {
+  display: grid;
+  grid-template-columns: 600px 450px;
+  grid-template-rows: auto;
+  grid-template-areas: "imgsite textsite";
+  justify-content: center;
+  margin-top: 5vh;
+  gap: 5vh;
+}
+.textsite{
+  font-size: 1.1em;
+}
+/*Liens*/
+
+.liens {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:7vh;
+}
+.gridliens{
+  display: grid;
+  grid-template-columns: 600px 450px;
+  grid-template-rows: auto;
+  grid-template-areas: "lienssize textarea";
+  justify-content: center;
+  margin-top: 5vh;
+  gap: 10vh;
+}
+
+.textarea{
+  width: 590px;
+  margin-bottom: 5vh;
+  font-size: 1.1em;
+}
+.graphikarttext h2{
+  margin-bottom: 2vh;
 }
