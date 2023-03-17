@@ -11,7 +11,7 @@
     </ul>
     <div class="divdm">
         <p class="dark" onclick="darkMode()"><b>Moon</b></p>
-        <p class="light" onclick="lightMode()"><b>Sun</b></p>
+        <p class="light" onclick="darkMode()"><b>Sun</b></p>
     </div>
 </nav>
 <hr>
