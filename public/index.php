@@ -18,13 +18,11 @@ require_once "../model/TravauxModel.php";
 require_once "../model/MailModel.php";
 //require_once "../model/UtilisateursModel.php";
 
-# PHP ini_set mail
-ini_set('SMTP', MAIL_SERVER);
-ini_set('smtp_port', MAIL_PORT);
-ini_set('sendmail_from', MAIL_FROM);
-
+# Autoload external Librairies (Mailer)
+#require_once "../vendor/autoload.php";
 
 # Router
+
 if(isset($_SESSION['myID'])&&$_SESSION['myID']==session_id()){
     require_once "../controller/privateController.php";
   

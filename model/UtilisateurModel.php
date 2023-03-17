@@ -40,6 +40,7 @@ function connectUsers(mysqli $c, string $login, string $pwd): bool|string
     }
 }
 
+/*
 /**
  * déconnexion de l'utilisateur
  * @return bool
