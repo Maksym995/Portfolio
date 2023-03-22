@@ -109,6 +109,18 @@ footer{
   width:100%; 
 }
 
+/*
+.travauxfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  bottom:-50vh;  /* on le colle en bas 
+  margin-top: 9vh;
+  width:100%; 
+}
+*/
 .h6 {
   margin: 1vh;
 }
@@ -122,9 +134,7 @@ footer{
 .dark-mode { 
   background-color: black;  color: white; 
 } 
-.light-mode {  
-  background-color: white;  color: black; 
-}
+
 
 .dark-mode a {
   color: white;
@@ -138,7 +148,9 @@ footer{
   background-color: white;
   color: black;
 }
-
+.light-mode {  
+  background-color: white;  color: black; 
+}
 
 /*Curriculum*/
 .curriculum{

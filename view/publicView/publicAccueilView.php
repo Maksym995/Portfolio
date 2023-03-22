@@ -15,9 +15,9 @@
 <div class="accueildiv">
     <img class="maphoto" src="assets/portfolio_moi.png" alt="">
     <h2></h2>
-    <p class="presentation">Bonjour et bienvenu, vous voici sur mon premier jet de mon portfolio.
-        J'espère que vous passerez une agéable visite, peut-être même divertissante.
-        En tout cas, c'est l'effet rechercher.
+    <p class="presentation">Bonjour et bienvenue, vous voici sur mon premier jet de mon portfolio.
+        J'espère que vous passerez une agréable visite, peut-être même divertissante.
+        En tous cas, c'est l'effet recherché.
         Si l'envie de travailler avec moi vous vient, n'hésitez pas à me contacter !! 
         <br><br>
         À très bientot.

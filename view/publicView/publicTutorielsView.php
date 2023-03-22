@@ -20,22 +20,22 @@
         <div class="graphikarttext">
             <h2>Apprendre le JavaScript : Les fonctions <br>
             Par Graphikart.fr</h2>
-            <p>J'apprécie tout particulièrement les tutos de Graphikart, ils sont toujours clairs et assez concis que pour ne pas devenir lourd sur la longueur. <br><br>
-             Les explications sur la synthaxe, la portée des fonctions, le this et les fonctions flechées tout ces sujets vulgarisés. bien-sûr il est possible de pousser plus loin leur compréhension mais l'essentiel pour débuter y est.</p>
+            <p>J'apprécie tout particulièrement les tutos de Graphikart, ils sont toujours clairs et assez concis pour ne pas devenir lourd sur la longueur. <br><br>
+             Les explications sur la synthaxe, la portée des fonctions, le this et les fonctions fléchées tous ces sujets vulgarisés. Bien-sûr il est possible de pousser plus loin leur compréhension mais l'essentiel pour débuter y est.</p>
         </div>
 </div>
 
 <div class="tutodiv">
     <h2>JavaScript : les variables, les types, les opérateurs</h2>
     <div>
-        <p>En JavaScript, pour les variables, on utilise let suivi du nom que l’on veut lui donner.<br><br>
+        <p>En JavaScript, pour les variables, on utilise "let" suivi du nom que l’on veut lui donner.<br><br>
         let lieuFormation = « CF2M » ;<br>
                         let anneeFormation = 2023 ;<br><br><br>
         Pour plus de précision et de lisibilité on peut assembler plusieurs mots pour le nom de la <br>
         la variable. <br><br>
         Il est plus confortable pour la lecture d’utiliser le dit « Camel case » qui est une manière <br>
-        d’écrire le nom de sa variable en commençant pas une lettre minuscule (premier mot) ;<br>
-        les suivant commenceront par une majuscule.<br><br>
+        d’écrire le nom de sa variable en commençant par une lettre minuscule (premier mot) ;<br>
+        les suivants commenceront par une majuscule.<br><br>
         La variable lieuFormation contient CF2M entre crochets car il contient du texte et <br>
         éventuellement des chiffres, c’est ce qui est appelé une variable de type : string. <br> <br>
         Les variables de type let peuvent êtres redéfinis par la suite. <br><br>
@@ -56,7 +56,7 @@
         Un number est un nombre entier, en anglais : integer (int) <br><br><br>
         3.	Booleans <br><br>let vrai = true ;<br>
                     let faux = false ;<br><br>
-        Un Boolean renvoie la valeur true ou false pour signalé une égalité ou son contraire. <br><br><br>
+        Un Booléen renvoie la valeur true ou false pour signalé une égalité ou son contraire. <br><br><br>
 
         4.	Objets <br><br>
         const language = {nom : « Javascript », anneeCreation : 1995, auteur : « Brendan Eich »} ;<br><br>
@@ -75,7 +75,7 @@
     </div>
     <div>
         <p>
-        Les opérateur, il en existe de deux sorte les premiers sont ceux qui sont ceux que <br> nombreux ont déjà utiliser.</p>
+        Il existe de deux sorte d'opérateurs les premiers sont ceux qui sont ceux que <br> nombreux ont déjà utiliser.</p>
        <h4> Les opérateurs arithmétiques</h4>
         </p>
 
